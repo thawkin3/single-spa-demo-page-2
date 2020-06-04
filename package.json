@@ -1,13 +1,13 @@
 {
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
+    "build": "webpack --mode=production",
+    "coverage": "jest --coverage",
     "lint": "eslint src",
     "prettier": "prettier --write './**'",
+    "start": "webpack-dev-server",
     "test": "jest --passWithNoTests",
-    "watch-tests": "jest --watch",
-    "coverage": "jest --coverage"
+    "watch-tests": "jest --watch"
   },
   "husky": {
     "hooks": {
