@@ -5,7 +5,7 @@ import https from "https";
 
 const importMapFilePath = path.resolve(process.cwd(), "importmap.json");
 const importMap = JSON.parse(fs.readFileSync(importMapFilePath));
-const url = `https://single-spa-demo.s3-us-west-2.amazonaws.com/%40thawkin3/single-spa-demo-page-2/${process.env.TRAVIS_COMMIT}/single-spa-demo-page-2.js`;
+const url = `https://single-spa-demo.s3-us-west-2.amazonaws.com/%40thawkin3/single-spa-demo-page-2/${process.env.TRAVIS_COMMIT}/thawkin3-single-spa-demo-page-2.js`;
 
 https
   .get(url, res => {
